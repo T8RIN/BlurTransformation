@@ -2,6 +2,9 @@
 
 This class will help to add bur effect on coil AsyncImage
 
+Copy BlurTranformation.kt file to your repository and you are ready to engage!
+
+
 ```kotlin
 //Usage example
 AsyncImage(
