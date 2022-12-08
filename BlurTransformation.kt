@@ -1,5 +1,3 @@
-package ru.tech.cookhelper.presentation.ui.utils.android
-
 import android.graphics.Bitmap
 import coil.size.Size
 import coil.transform.Transformation
