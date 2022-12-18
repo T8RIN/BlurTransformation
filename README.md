@@ -7,15 +7,21 @@ Copy BlurTranformation.kt file to your repository and you are ready to engage!
 
 ```kotlin
 //Usage example
+val request = ImageRequest.Builder(context)
+    .data("https://avatars.githubusercontent.com/u/52178347?v=4")
+    .transformations(
+        listOf(
+           BlurTransformation(
+               scale = 0.5f,
+               radius = 25
+           )
+        ) 
+    )
+    .build()
+        
 AsyncImage(
-  model = "https://avatars.githubusercontent.com/u/52178347?v=4",
-  modifier = Modifier.size(100.dp),
-  transfomations = listOf(
-      BlurTransformation(
-          scale = 0.5f,
-          radius = 25
-      )
-  )
+  model = request,
+  modifier = Modifier.size(100.dp)
   /*your other params*/
 )
 ```
